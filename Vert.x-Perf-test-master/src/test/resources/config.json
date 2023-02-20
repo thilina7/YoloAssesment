@@ -1,0 +1,33 @@
+{
+  "servicePort":8292,
+  "serviceParams":[
+    {
+      "serviceName":"create_user",
+      "type":"POST",
+      "mandatoryParams":"nameWithInitials,accountType,id,email,contactNo",
+      "conditionalMandatoryParams":"dob"
+    },
+    {
+      "serviceName":"deposit",
+      "type":"PUT",
+      "mandatoryParams":"nameWithInitials,accountNumber,amount,source",
+      "conditionalMandatoryParams":"remarks"
+    },
+    {
+      "serviceName":"withdraw",
+      "type":"PATCH",
+      "mandatoryParams":"nameWithInitials,accountNumber,amount",
+      "conditionalMandatoryParams":"remarks"
+    },
+    {
+      "serviceName":"send",
+      "type":"PATCH",
+      "mandatoryParams":"senderAccountNumber,receiverName,receiverAccountNumber,receiverBankCode,amount",
+      "conditionalMandatoryParams":"remarks"
+    },
+    {
+      "serviceName":"get_balance",
+      "type":"GET"
+    }
+  ]
+}

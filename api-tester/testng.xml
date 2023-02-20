@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Suite1">
+    <test name = "test1">
+        <classes>
+            <class name = "com.exbank.tests.CreateUserTest" />
+            <class name = "com.exbank.tests.DepositTest" />
+            <class name="com.exbank.tests.GetBalanceTest"/>
+            <class name="com.exbank.tests.WithdrawTest"/>
+            <class name="com.exbank.tests.IntegrationTest"/>
+        </classes>
+    </test>
+</suite>
